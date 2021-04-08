@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".fragments.AjoutEleve">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:background="#FFFFFF"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Ajouter un élève"
+                android:textColor="@color/green"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/nom"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+
+            android:hint="Nom"
+            android:paddingLeft="16dp" />
+
+        <EditText
+            android:id="@+id/prenom"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+
+            android:hint="Prénom"
+            android:paddingLeft="16dp" />
+
+        <EditText
+            android:id="@+id/date_naissance"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+
+            android:hint="Date de naissance"
+            android:paddingLeft="16dp" />
+
+        <EditText
+            android:id="@+id/lieu_naissance"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+
+            android:hint="Lieu de naissance"
+            android:paddingLeft="16dp" />
+
+        <Spinner
+            android:id="@+id/classe"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:entries="@array/liste_classe"
+            android:paddingLeft="16dp" />
+
+        <Spinner
+            android:id="@+id/annee_academique"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+
+            android:layout_marginTop="16dp"
+            android:entries="@array/liste_annee_academique"
+            android:paddingLeft="16dp" />
+
+        <Button
+            android:id="@+id/valider"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="26dp"
+            android:background="@color/green"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:text="Ajouter"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+
+            />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
